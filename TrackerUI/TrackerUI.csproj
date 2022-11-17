@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreatePrizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePrizeForm.Designer.cs">
+      <DependentUpon>CreatePrizeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateTeamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,14 +64,23 @@
     <Compile Include="CreateTournamentForm.Designer.cs">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TournamentViewer.cs">
+    <Compile Include="TournamentDashBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TournamentViewer.Designer.cs">
-      <DependentUpon>TournamentViewer.cs</DependentUpon>
+    <Compile Include="TournamentDashBoardForm.Designer.cs">
+      <DependentUpon>TournamentDashBoardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TournamentViewerForm.Designer.cs">
+      <DependentUpon>TournamentViewerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreatePrizeForm.resx">
+      <DependentUpon>CreatePrizeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateTeamForm.resx">
       <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,8 +96,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TournamentViewer.resx">
-      <DependentUpon>TournamentViewer.cs</DependentUpon>
+    <EmbeddedResource Include="TournamentDashBoardForm.resx">
+      <DependentUpon>TournamentDashBoardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TournamentViewerForm.resx">
+      <DependentUpon>TournamentViewerForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
