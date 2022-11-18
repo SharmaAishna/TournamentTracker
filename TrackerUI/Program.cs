@@ -20,7 +20,8 @@ namespace TrackerUI
             Application.SetCompatibleTextRenderingDefault(false);
             //Initialize the database connection
             TrackerLibrary.GlobalConfig.InitializeConnections(true,true);
-            Application.Run(new TournamentDashBoardForm());
+           // Application.Run(new CreatePrizeForm());
+              Application.Run(new TournamentDashBoardForm());
         }
     }
 }
