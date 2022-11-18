@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TrackerLibrary
-{
-    /// <summary>
-    /// Represents one person.
-    /// </summary>
+{ /// <summary>
+  /// Represents one person.
+  /// </summary>
     public class PersonModel
     {
         /// <summary>
