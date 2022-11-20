@@ -12,20 +12,20 @@ namespace TrackerLibrary
   //but static class is not a blue print its actually a house
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
-        public static void InitializeConnections(bool database, bool TextFiles)
+        public static IDataConnection Connection { get; private set; } 
+        public static void InitializeConnections(DatabaseType db)
         {
-            if (database)
+            if (db==DatabaseType.sql)
             {
                 //TODO- Set up sql connector properly
                 SqlConnector sql = new SqlConnector();
-                Connections.Add(sql);
+                Connection=sql;
             }
-            if (TextFiles)
+            else if (db==DatabaseType.Textfile)
             {
                 //TODO- create the text connection
                 TextConnector text = new TextConnector();
-                Connections.Add(text);
+                Connection=text;
             }
         }
         public static string cnnString(string name)
