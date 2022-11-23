@@ -10,6 +10,11 @@ namespace TrackerLibrary.Models
   /// </summary>
     public class PersonModel
     {
+
+        /// <summary>
+        /// The unique identifier for the prize.
+        /// </summary>
+        public int Id { get; set; }
         /// <summary>
         /// The First Name of the Person.
         /// </summary>

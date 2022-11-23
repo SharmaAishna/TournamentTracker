@@ -61,6 +61,8 @@
     <Build Include="Tables\Prizes.sql" />
     <Build Include="Tables\Person.sql" />
     <Build Include="StoredProcedures\spPrizes_Insert.sql" />
+    <Build Include="Tables\TeamMembers.sql" />
+    <Build Include="StoredProcedures\spPerson_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Tournament.refactorlog" />
